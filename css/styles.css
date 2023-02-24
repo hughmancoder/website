@@ -33,12 +33,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  margin: var(--margin-height) 0 0 0;
   font-size: var(--font-size);
   color: var(--text-color);
   font-family: var(--text-font);
-  margin-left: var(--margin-left);
-  margin-right: var(--margin-right);
   background-color: var(--background-color-light);
 }
 
@@ -96,7 +93,6 @@ img {
 .nav-container {
   z-index: 100;
   width: 100%;
-  position: fixed;
   top: 0;
   left: 0;
   box-shadow: var(--box-shadow);
