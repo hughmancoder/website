@@ -11,20 +11,23 @@
 </head>
 
 <body>
-    <header>
-        <div class="nav-container">
-            <nav class="nav">
-                <ul class="nav-links">
-                    <li><a href="#Home" class="nav-link">Home</a></li>
-                    <li><a href="#Skills" class="nav-link">Skills</a></li>
-                    <li><a href="#Projects" class="nav-link">Projects</a></li>
-                    <li><a href="#Contact" class="nav-link">Contact</a></li>
-                </ul>
+    <div class="nav-container">
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="#Home" class="nav-link">Home</a></li>
+                <li><a href="#Skills" class="nav-link">Skills</a></li>
+                <li><a href="#Projects" class="nav-link">Projects</a></li>
+                <li><a href="#Contact" class="nav-link">Contact</a></li>
+            </ul>
+            <ul class="nav-links">
+                <div id="dark-mode-toggle">
+                    <a class="logo"><i class="uil uil-sunset"></i></a>
+                </div>
                 <a href="https://github.com/hughmancoder" target="_blank" class="logo"><i
                         class="uil uil-github-alt"></i></a>
-            </nav>
-        </div>
-    </header>
+            </ul>
+        </nav>
+    </div>
 
     <div class="main">
         <div id="Home">
@@ -33,7 +36,8 @@
                     <h1> Hugh Signoriello </h1>
                     <h3>Full Stack Software Engineer, Machine Learning enthusiast and Pianist</h3>
                     <p>I enjoy building things in my spare time</p>
-                    <div class="move"> <i class="uil uil-arrow-right"></i> Check out my resume</div>
+                    <a href="assets/General resume Hugh Signoriello.pdf" download rel="noopener noreferrer"
+                        target="_blank" class="move"> <i class="uil uil-arrow-right"></i> Check out my resume</a>
                 </div>
                 <div id="home-image">
                     <h1 id="profile-title"> Hi and welcome</h1>
@@ -144,5 +148,6 @@
         </footer>
     </div>
 </body>
+<script src="js/index.js"></script>
 
 </html>

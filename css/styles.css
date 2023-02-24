@@ -14,7 +14,7 @@
   --text-color-large: rgb(0, 0, 0);
   --text-color-medium: rgb(42, 42, 42);
   --text-color-small: rgb(120, 120, 120);
-  --background-color-light: rgb(242, 242, 242);
+  --background-color: rgb(242, 242, 242);
 
   --large-title-font: "Epilogue", sans-serif;
   --text-font: "Lato", sans-serif;
@@ -24,6 +24,15 @@
 
   --box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
+
+.darkmode {
+  --text-color-large: rgb(255, 255, 255);
+  --text-color-medium: rgb(220, 220, 220);
+  --text-color-small: rgb(200, 200, 200);
+  --background-color: rgb(42, 42, 42);
+  --box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+}
+
 *,
 ::before,
 ::after {
@@ -36,7 +45,7 @@ body {
   font-size: var(--font-size);
   color: var(--text-color);
   font-family: var(--text-font);
-  background-color: var(--background-color-light);
+  background-color: var(--background-color);
 }
 
 h1 {
@@ -64,10 +73,7 @@ a {
 
 .logo {
   font-size: 1.65rem;
-  /*
-  padding-left: 4rem;
-  padding-right: 4rem; */
-  color: #333;
+  color: var(--text-color-medium);
   margin: 0 10px;
   transition: color 0.2s;
   display: inline-block;
@@ -93,8 +99,8 @@ img {
 .nav-container {
   z-index: 100;
   width: 100%;
-  top: 0;
-  left: 0;
+  padding-left: 8rem;
+  padding-right: 8rem;
   box-shadow: var(--box-shadow);
 }
 
@@ -103,8 +109,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: var(--margin-left);
-  margin-right: var(--margin-right);
 }
 
 .nav-links {
@@ -114,7 +118,7 @@ img {
   justify-content: space-between;
 }
 
-.nav-links li {
+.nav-links li a {
   margin-right: 2rem;
 }
 
@@ -123,7 +127,7 @@ img {
 }
 
 .nav-links a {
-  color: var(--text-color);
+  color: var(--text-color-medium);
   transition: all 1s ease;
   position: relative;
 }
@@ -207,7 +211,7 @@ header {
 }
 
 .emphasis {
-  color: black;
+  color: var(--text-color-large);
 }
 
 .icon-container {
