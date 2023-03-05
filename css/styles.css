@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@700;900&family=Lato:wght@300&display=swap");
 
 :root {
-  --hue-color: 212.7;
-  --secondary-hue-color: 162.8;
+  /*  --hue-color: 212.7;
+  --secondary-hue-color: 162.8; */
+  --hue-color: 18;
+  --secondary-hue-color: 42;
   --primary-color: hsl(var(--hue-color), 100%, 52%);
   --secondary-color: hsl(var(--secondary-hue-color), 87%, 49%);
 
